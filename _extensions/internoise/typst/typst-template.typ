@@ -9,7 +9,7 @@
 #let CityConfa = "Nantes"
 #let DateConf = [25-28 August #YearConf]
 #let CountryConf = "France"
-#let LogoConf = "_extensions/internoise/logo_IN24.jpg"
+#let LogoConf = "logo_IN24.jpg"
 #let CopyrightConf = [
   Permission is granted for the reproduction of a fractional part of this paper published in the Proceedings of INTER-NOISE #YearConf #underline[provided permission is obtained] from the author(s) and #underline[credit is given] to the author(s) and these proceedings.
 ]
@@ -209,7 +209,7 @@
         #set text(size: 12pt)
         References
         ], 
-        style: "_extensions/internoise/ieee-mod.csl")
+        style: "ieee-mod.csl")
     // Closest styles to bibtex's unsrt format:
     // "american-institute-of-aeronautics-and-astronautics"
     // "american-society-of-mechanical-engineers"

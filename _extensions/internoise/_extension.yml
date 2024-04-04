@@ -8,7 +8,7 @@ contributes:
       toc: true
       template: latex/template.tex
       # include-in-header: header.tex
-      csl: _extensions/internoise/ieee-mod.csl
+      csl: ieee-mod.csl
     typst:
       template-partials:
         - typst/typst-template.typ

@@ -60,7 +60,7 @@ All figures, tables, equations, photos, graphs, etc., must be shown shortly afte
 
 The captions of figures and photos are put below the figures and photos (see @fig-1). They are centered if one line or less long, and fully justified if longer than one line. They should be referred to in the text as Figure 1, Figure 2, etc.
 
-![The INTER-NOISE 2024 logo.](_extensions/internoise/logo_IN24.jpg){#fig-1 width=2in}
+![The INTER-NOISE 2024 logo.](logo_IN24.jpg){#fig-1 width=2in}
 
 The equations should be referenced as Equation 1, Equation 2, etc. For example: the formula for estimating the mean value, is:
 
