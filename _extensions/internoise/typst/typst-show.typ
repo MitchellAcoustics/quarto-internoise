@@ -37,7 +37,7 @@
   $if(acknowl)$
     acknowl: [$acknowl$],
   $endif$
-  $if(bib)$
-    bib: "$bib$",
+  $if(bib-typst)$
+    bib: "$bib-typst$",
   $endif$
 )

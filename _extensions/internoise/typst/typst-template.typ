@@ -77,9 +77,9 @@
   set math.equation(numbering: "(1)")
   show math.equation.where(block: true): it => block({
     set text(weight: 400)
-    v(0.65em)
+    v(0.4em)
     it
-    v(0.65em)
+    v(0.2em)
   })
 
   // Figure formatting
@@ -112,6 +112,7 @@
   show list: it => block({
     v(0.45em)
     it
+    v(0.45em)
   })
 
   // Set paragraph spacing.
@@ -122,17 +123,17 @@
   set heading(numbering: "1.1.")
   show heading: set text(size: 12pt, weight: "bold")
   show heading: it => block({
-    v(.65em)
+    v(.35em)
     if it.numbering != none{
     counter(heading).display()
-    h(1em)
+    h(.1em)
   }
     it.body
   })
 
   show heading.where(level: 1): set text(size: 12pt, weight: "bold")
   show heading.where(level: 1): it => block({
-    v(.65em)
+    v(.35em)
     if it.numbering != none{
     counter(heading).display()
     h(1em)
@@ -151,7 +152,7 @@
     image(LogoConf),
     width: 5.06cm
   )]
-  v(1em)
+  v(0.9cm)
   
   // Title row.
   align(left)[
@@ -160,9 +161,9 @@
 
   // Author information.
   pad(
-    // top: 2em,
+    top: 0.5cm,
     // bottom: 0.3em,
-    x: 2em,
+    // x: 2em,
     grid(
       columns: 1,
       gutter: 2em,
@@ -208,7 +209,7 @@
         #set text(size: 12pt)
         References
         ], 
-        style: "american-society-of-mechanical-engineers")
+        style: "_extensions/internoise/ieee-mod.csl")
     // Closest styles to bibtex's unsrt format:
     // "american-institute-of-aeronautics-and-astronautics"
     // "american-society-of-mechanical-engineers"

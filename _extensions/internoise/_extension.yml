@@ -8,7 +8,7 @@ contributes:
       toc: true
       template: latex/template.tex
       # include-in-header: header.tex
-      csl: ieee-mod.csl
+      csl: _extensions/internoise/ieee-mod.csl
     typst:
       template-partials:
         - typst/typst-template.typ
@@ -16,7 +16,6 @@ contributes:
       include-before-body: 
         text: |
           #show heading: set text(size: 12pt, weight: "bold")
-      cite-proc: false   
 filters:
   - parse-latex
 

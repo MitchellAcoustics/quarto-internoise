@@ -5,7 +5,7 @@ abstract: |
   The manuscript of every INTER-NOISE 2024 paper should be submitted as a “pdf” file. The abstract must be written in 12-point "Utopia" or "Minion Pro" and italic font and its length ought to be at least 150 words and at most 200 words. Hyperlinks, special characters, equations, images and drawings should NOT be put in the abstract, and avoid the use of acronyms.  As in the paper, avoid overt commercialism. 
 format:
   internoise-typst: default
-  internoise-pdf: default
+  # internoise-pdf: default
 authors: 
   - name: Given Name Family Name1
     email: "mail1@example.com"
@@ -19,7 +19,8 @@ authors:
       - name: Institution
         department: Department
         address: City, Country
-bibliography: sample.bib
+# bibliography: sample.bib
+bib-typst: sample.bib
 ---
 
 # Introduction
@@ -140,8 +141,8 @@ Please follow the instructions. Mostly the LaTeX stuff will look after you, but 
 \noindent
 We gratefully acknowledge the authors for submitting their work to INTER-NOISE \YearConf  France.
 
-
+<!-- 
 # References{.unnumbered}
 
 ::: {#refs}
-:::
+::: -->
