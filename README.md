@@ -33,4 +33,4 @@ format:
   internoise-typst: default
 ```
 
-You can view a preview of the rendered template at https://quarto-journals.github.io/article-format-template/.
+You can view a preview of the rendered template [here](template_typst.pdf).
