@@ -1,0 +1,147 @@
+---
+title: |
+  Instructions for preparing the manuscript of the papers for Proceedings of INTER-NOISE \YearConf \CityConf
+abstract: |
+  The manuscript of every INTER-NOISE \YearConf paper should be submitted as a “pdf” file. The abstract must be written in 12-point "Utopia" or "Minion Pro" and italic font and its length ought to be at least 150 words and at most 200 words. Hyperlinks, special characters, equations, images and drawings should NOT be put in the abstract, and avoid the use of acronyms.  As in the paper, avoid overt commercialism. 
+format:
+  qlatex-internoise-pdf: 
+    keep-tex: false
+authors: 
+  - name: Given Name Family Name1
+    email: "mail1@example.com"
+    affiliations:
+      - name: Institution
+        department: Department
+        address: City, Country
+  - name: Given Name Family Name2
+    email: "mail2@example.com"
+    affiliations:
+      - name: Institution
+        department: Department
+        address: City, Country
+bibliography: sample.bib
+---
+
+# Introduction
+\noindent
+This paper is a template to which you can refer for your paper. The first step is to compile this document and make sure everything is working on your computer. Your .pdf file should match what you should see in Template.pdf.
+
+It is anticipated that the INTER-NOISE \YearConf \ \CityConf \ Proceedings will be distributed to the congress participants either on a memory stick or directly downloadable as a single (zipped or equivalent) file from the web.
+
+- The purpose of these instructions is to ensure the uniformity of the publication.
+- The manuscript should be submitted as a PDF file whose font is 12-point.
+- The length of the manuscript should be at most 12 pages and at least 4 pages.
+- Only manuscripts in English will be accepted for the Proceedings.
+- You must not insert any page number, header or foot note except the e-mail addresses on the first page of the manuscript.
+- The file name for your paper should be of the form: IN\_\YearConf\_XXXX.pdf, where XXXX is your abstract number. If your abstract number is shorter than 4 digits, it should be extended to be 4 digits by adding zeros before the number. So, e.g. if your abstract number is 10, your paper file name should be IN\_\YearConf\_0010.pdf. If your abstract number is 240, then you paper filename should be IN\_\YearConf\_0240.pdf
+
+# Manuscript format
+\noindent
+Margin settings, paragraphs, figure and table settings are explained here. These instructions follow the paper formatting rules.
+
+## Margin Settings
+
+ * The paper size is A4.
+ * Margin settings: Top (2cm), Bottom (2cm), Left (2cm), Right (2cm). 2cm is approximately 0.79 in.
+ * The text should be justified from left to right.
+
+## Paragraphs
+
+ * There should be one empty line between headings and subheadings.
+ * The first line of the paragraphs should be indented by 1.0 cm, which is approximately 0.4in, unless it is immediately after a heading in which case there should be no indent.
+ * Major headings shall be numerically ordered as 1., 2., etc. in bold font and all upper case. 
+ * Level 2 subheading should be 2.1., 2.2., etc. in bold font.
+ * Lines should by single spaced.
+
+## Figures, Equations, Tables
+\noindent
+All figures, tables, equations, photos, graphs, etc., must be shown shortly after they are mentioned, placed at the centre of a page as shown in Figure 1 below.
+
+The captions of figures and photos are put below the figures and photos (see @fig-1). They are centered if one line or less long, and fully justified if longer than one line. They should be referred to in the text as Figure 1, Figure 2, etc.
+
+![The INTER-NOISE 2024 logo.](logo_IN24.jpg){#fig-1 width=2in}
+
+The equations should be referenced as Equation 1, Equation 2, etc. For example: the formula for estimating the mean value, is:
+
+$$
+\overline{X} = \frac{1}{N} \sum_{i=1}^N X_i, 
+$$ {#eq-1}
+
+where $X_i$ are the measurements, and $N$ is the number of measurements. The equation should be part of the sentence, either with a period at the end, or a comma as in @eq-1 shown above where after the displayed equation, the variables are explained as part of the sentence that contains the displayed equation.
+
+The caption for a table should be placed just above the table and the table number should be Table 1, Table 2, etc. like @tbl-1 below. The caption is centered if one line long or less, and fully justified if longer than one line. Tables should be referred to in the text as, e.g. @tbl-1.
+
+
+| **Test Number** | **Variable 1** | **Variable 2** |
+| :-------------: | :------------: | :------------: |
+|        1        |      6.1       |       a        |
+|        2        |      7.2       |       b        |
+|        3        |      3.3       |       c        |
+
+: Example of values displayed in a table. The header row is bold, and the columns are not usually separated by lines. {#tbl-1}
+
+<!-- ```{=latex}
+\begin{table}
+
+\caption{Example of values displayed in a table. The header row is bold, and the columns are not usually separated by lines.}
+\label{tbl-1}
+
+\begin{center}
+\begin{tabular}{c c c } 
+ \hline
+ \textbf{Test Number} &  \textbf{Variable 1}& \textbf{Variable 2}  \\ [0.5ex] 
+ \hline
+ 1 & 6.1 & a \\ 
+ \hline
+ 2 & 7.2 & b  \\
+ \hline
+ 3 & 3.3 & c \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
+\end{table}
+``` -->
+
+# Referencing other work
+\noindent
+Use a numerical referencing system, in order of first time cited. For LaTeX users, please take care and consider the use of bibtex. Either put the references in this file or use a .bib file and let LaTeX pull out the references that you are using. The .bib file in this example is sample.bib. The LaTeX references cited here are: [@latexcompanion; @knuthwebsite]. Some additional references have been included as examples for format of manuals, webpage information, journal papers, conference papers, books and a standard [@Poulsen1; @Ryherd2007; @Tang2006; @May96; @Zwicker_Fastl_2006; @ANSI_S3_4].
+
+\
+
+Use the unsrt bibliography style.
+
+# Important uploading information
+\noindent
+Here are the instructions for submitting manuscripts, with some comments on conversion to PDF.
+
+## Submission of manuscripts
+\noindent
+Submit your manuscript as a PDF file using the link on the INTER-NOISE 2024 website (www.internoise2024.org). See [subsection @sec-pdfconv] about checking your conversion to PDF.
+
+Before submitting the manuscript, you need to pay the registration fee and if you submit two manuscripts, you need to pay the extra nominal charge for this additional manuscript.
+
+## Conversion to PDF {#sec-pdfconv}
+\noindent
+Before submission, you need to check your PDF file carefully to be sure that PDF conversion was done properly and there is no error when the PDF file is opened. The following problems may occur.
+
+- Symbols are missed.
+- Symbols are converted incorrectly, especially mathematical symbols.
+- Figures are missed.
+- Indentation is not correct. 
+
+The author is responsible for sorting out these problems and the manuscript in the Congress Proceedings will be as it was received.
+
+# Final comments and conclusions
+\noindent
+Please follow the instructions. Mostly the LaTeX stuff will look after you, but check everything is working. Recompile this document to make sure you get the same as the Template.pdf file before you start working on your own paper. Once you have that working copy this file into IN_2024_XXXX.pdf, where XXXX is your ABSTRACT number with 0s added at the front to make it 4 digits long. Then turn that file into your paper, keeping this file as a reference on formatting.
+
+
+# Acknowledgements{.unnumbered}
+\noindent
+We gratefully acknowledge the authors for submitting their work to INTER-NOISE \YearConf  France.
+
+
+# References{.unnumbered}
+
+::: {#refs}
+:::
