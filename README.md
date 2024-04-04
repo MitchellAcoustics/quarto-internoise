@@ -1,24 +1,36 @@
-# Qlatex-internoise Format
+# INTER-NOISE 2024 Template for Quarto
 
-## Installing
+## Creating a New Article
 
-*TODO*: Replace the `<github-organization>` with your GitHub organization.
+You can use this as a template to create an article for an AFT journal. To do this, use the following command:
 
 ```bash
-quarto use template <github-organization>/qlatex-internoise
+quarto use template MitchellAcoustics/quarto-internoise
 ```
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
 
-## Using
+## Installation For Existing Document
 
-*TODO*: Describe how to use your format.
+You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
 
-## Format Options
+```bash
+quarto add MitchellAcoustics/quarto-internoise
+```
 
-*TODO*: If your format has options that can be set via document metadata, describe them.
+## Usage
 
-## Example
+To use the format, you can use the format names internoise-pdf and internoise-typst. For example:
 
-Here is the source code for a minimal sample document: [example.qmd](example.qmd).
+```bash
+quarto render article.qmd --to internoise-pdf
+```
 
+or in your document yaml
+
+```yaml
+format:
+  internoise-typst: default
+```
+
+You can view a preview of the rendered template at https://quarto-journals.github.io/article-format-template/.
